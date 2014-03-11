@@ -163,6 +163,7 @@ def build(bld):
         'model/hash-murmur3.cc',
         'model/hash-fnv.cc',
         'model/hash.cc',
+	'model/checkpointer.cc',
         ]
 
     core_test = bld.create_ns3_module_test_library('core')
@@ -271,6 +272,7 @@ def build(bld):
         'model/hash-murmur3.h',
         'model/hash-fnv.h',
         'model/hash.h',
+	'model/checkpointer.h',
         ]
 
     if sys.platform == 'win32':
